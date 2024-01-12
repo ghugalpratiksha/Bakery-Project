@@ -1,0 +1,28 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3 col-md-12 col-sm-12"></div>
+    <div class="col-lg-6 col-md-12 col-sm-12">
+      <form action="/action_page.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" [(ngModel)]="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" [(ngModel)]="email">
+
+        <label for="Number">Contact Number</label>
+        <input type="number" id="Number" name="Number" placeholder="Your Contact Number" [(ngModel)]="number">
+
+        <label for="Address">Address</label>
+        <input type="address" id="Address" name="Address" placeholder="Your Residential Address" [(ngModel)]="address">
+
+        <label for="Message">Message</label>
+        <textarea id="Message" name="Message" placeholder="Write Something Here" rows="5" [(ngModel)]="message"></textarea>
+
+        <input type="button" value="Submit" [disabled]="email == '' || name == '' " (click)="Submit()">
+      </form>
+    </div>
+    <div class="col-lg-3 col-md-12 col-sm-12"></div>
+  </div>
+</div>
+<app-footer></app-footer>

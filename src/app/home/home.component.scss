@@ -1,0 +1,107 @@
+.row{
+    margin-top: 30px;
+}
+
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-img{
+    width:100px;
+    border-radius: 50px;
+    border: 1.5px solid black;
+}
+
+.btn-primary{
+    width: 15%;
+    margin-left: 43%;
+    margin-right: 40%;
+    background-image: linear-gradient(to right, #f9c929 0%, #9f025e 51%, #f9c929 100%);
+    border-radius: 50px;
+    height: 45px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-warning{
+    width: 15%;
+    margin-left: 43%;
+    margin-right: 40%;
+    background-image: linear-gradient(to right, #f9c929 0%, #9f025e 51%, #f9c929 100%);
+    border-radius: 50px;
+    height: 45px;
+    width: 20%;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.btn-primary:hover, .btn-warning:hover{
+    background-image: linear-gradient(to right, #facd3a 0%, #ea0a8d 51%, #facd3a 100%);
+}
+
+h2{
+    text-align: center;
+}
+.card-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.btn-success{
+    background-color: green;
+    border-radius: 50px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+th{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+td{
+    font-size: 17px;
+}
+
+#serchbar{
+    border-top: 1.4px solid #9f025e;
+    border-bottom: 1.4px solid #9f025e;
+    border-left: 1.4px solid #f9c929;
+    border-right: 1.4px solid #f9c929;
+    height: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#tablerow{
+    margin-bottom: 100px;
+}
+
+#button {
+    float: left;
+    // width: 5%;
+    // height: 3%;
+    margin-top: -40px;
+    padding: 10px;
+    background: white;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border: none;
+    cursor: pointer;
+    margin-left: 773px;
+  }

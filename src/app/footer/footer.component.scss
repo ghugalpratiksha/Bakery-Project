@@ -1,0 +1,27 @@
+.footer{
+    background-color: black;
+    color: #fff;
+    padding-top: 30px;
+}
+
+li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p{
+    font-size: 17px;
+}
+
+.img{
+    width: 150px;
+    border-radius: 100px;
+    // mix-blend-mode: multiply;
+    border: 2px solid #fff;
+    cursor: pointer;
+}

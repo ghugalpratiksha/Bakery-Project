@@ -1,0 +1,37 @@
+.profile-img{
+    border-radius: 70px;
+    width: 100px;
+}
+
+h3, h4{
+    text-align: center;
+    font-weight: bold;
+}
+
+input{
+    border-top: 1.4px solid #9f025e;
+    border-bottom: 1.4px solid #9f025e;
+    border-left: 1.4px solid #f9c929;
+    border-right: 1.4px solid #f9c929;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+input:hover{
+    border: 2px solid #9f025e;
+}
+
+.row{
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2), 10px 6px 20px 5px rgba(0, 0, 0, 0.19);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.img{
+    border-radius: 300px;
+    width: 300px;
+    padding: 15px;
+    border: 2px solid #9f025e;
+    margin-left: 35px;
+}

@@ -1,0 +1,99 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row">
+  </div>
+  <h2>Bakery Products</h2>
+
+  <div class="row">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Add New
+      Product</button>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Add New Product</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="mb-3 mt-3">
+            <label for="email">Product Name:</label>
+            <input type="name" class="form-control" id="name" [(ngModel)]="name" placeholder="Enter product name"
+              name="name" />
+          </div>
+          <div class="mb-3">
+            <label for="price">Product price:</label>
+            <input type="text" class="form-control" id="price" [(ngModel)]="price" placeholder="Enter product price"
+              name="price" />
+          </div>
+          <div class="mb-3">
+            <label for="file">Upload Image:</label>
+            <input type="file" class="form-control" (change)="handleUpload($event)" id="file" placeholder="choose file"
+              name="file" />
+          </div>
+          <button class="btn btn-warning" (click)="addData()" data-bs-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card row -->
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12" id="card" *ngFor="let item of product">
+      <div class="card" style="width: 280px; height: 430px; margin-bottom: 20px;">
+        <img class="card-img-top" [src]="item.image" alt="{{item.name}}" style="width:100%" />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">Price: ${{ item.price }}</p>
+          <a class="btn btn-success" style="width: 100%;" (click)="addCart(item)">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <div>
+        <input type="text" class="form-control" id="serchbar" placeholder="Search products" [(ngModel)]="searchText"/>
+        <span class="glyphicon glyphicon-search" id="button"></span>
+      </div>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+  <!-- table -->
+  <div class="row" id="tablerow">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Product Image</th>
+          <th>Product name</th>
+          <th>Product Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems | search:searchText ; let i = index">
+          <td>
+            <img class="card-img" [src]="item.image" alt="Card image">
+          </td>
+          <td>{{item.name}}</td>
+          <td>{{item.price}}</td>
+          <td>
+
+            <button type="button" class="btn btn-default btn-sm" (click)="delete(i)">
+              <span class="glyphicon glyphicon-trash"></span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,45 @@
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-top: 1.4px solid #9f025e;
+    border-bottom: 1.4px solid #9f025e;
+    border-left: 1.4px solid #f9c929;
+    border-right: 1.4px solid #f9c929;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input:hover, select:hover, textarea:hover{
+    padding: 14px;
+  }
+  
+  input[type=button] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: 1.4px solid #9f025e;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 50px;
+    margin-left: 135px;
+    font-weight: bold;
+  }
+  
+  input[type=button]:hover {
+    background-image: linear-gradient(to right, #f9c929 0%, #9f025e 51%, #f9c929 100%);
+    color: black;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  label{
+    font-weight: bold;
+  }
